@@ -10,7 +10,7 @@ import { resolveUpdaterObjectFromArgument } from './lib/updaters/index.js';
 import defaults from './defaults.js';
 import { mergician } from 'mergician';
 
-export default async function ryly(argv) {
+export default async function relow(argv) {
 	/**
 	 * `--message` (`-m`) support will be removed in the next major version.
 	 */
@@ -24,7 +24,7 @@ export default async function ryly(argv) {
 		argv.preset.releaseCommitMessageFormat = message.replace(/%s/g, '{{currentTag}}');
 		if (!argv.silent) {
 			console.warn(
-				'[ryly]: --message (-m) will be removed in the next major release. Use --releaseCommitMessageFormat.',
+				'[relow]: --message (-m) will be removed in the next major release. Use --releaseCommitMessageFormat.',
 			);
 		}
 	}
@@ -33,7 +33,7 @@ export default async function ryly(argv) {
 		argv.preset.header = argv.changelogHeader;
 		if (!argv.silent) {
 			console.warn(
-				'[ryly]: --changelogHeader will be removed in the next major release. Use --header.',
+				'[relow]: --changelogHeader will be removed in the next major release. Use --header.',
 			);
 		}
 	}
