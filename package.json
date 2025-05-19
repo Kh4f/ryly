@@ -1,14 +1,27 @@
 {
 	"name": "relow",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Release workflow helper for Node.js projects.",
 	"author": "Kh4f",
 	"license": "MIT",
-	"repository": {"type": "git", "url": "git+https://github.com/Kh4f/relow.git"},
-	"bugs": {"url": "https://github.com/Kh4f/relow/issues"},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Kh4f/relow.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Kh4f/relow/issues"
+	},
 	"homepage": "https://github.com/Kh4f/relow#readme",
-	"keywords": ["relow","release", "release-workflow", "release-helper", "semantic-release",
-		"conventional-changelog", "standard-version", "commit-and-tag-version"],
+	"keywords": [
+		"relow",
+		"release",
+		"release-workflow",
+		"release-helper",
+		"semantic-release",
+		"conventional-changelog",
+		"standard-version",
+		"commit-and-tag-version"
+	],
 	"main": "./src/index.js",
 	"type": "module",
 	"bin": "bin/cli.js",
